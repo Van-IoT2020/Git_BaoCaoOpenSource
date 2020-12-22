@@ -1,0 +1,1 @@
+<a class="scrollToTop" href="#" style="margin-bottom: 40px;margin-right: 12px;"><i class="fa fa-chevron-up"></i></a>
