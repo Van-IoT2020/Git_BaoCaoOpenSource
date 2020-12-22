@@ -1,5 +1,5 @@
 <?php 
-const DBHOST = "localhost:3308";
+const DBHOST = "localhost:3306";
 const DBUSER = "root";
 const DBPASS = "";
 const DBNAME = "opensource";
