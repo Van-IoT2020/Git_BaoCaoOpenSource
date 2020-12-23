@@ -71,7 +71,10 @@
         </figure>
 
         <div class="aa-product-hvr-content">
-            <a href="index.php?p=product&idsp=<?php echo $item['id']; ?>" data-toggle="tooltip" data-placement="top"
+        <!-- BUG KHONG THEM DUOC VAO GIO HANG-->
+        <!-- <a href="index.php?p=product&idsp=<//?php echo $item//['id']; ?>" data-toggle="tooltip" data-placement="top"
+                title="Thêm vào giỏ hàng"><span class="fa fa-shopping-cart fa-3x"></span></a> -->
+            <a href="index.php?p=product&idsp" data-toggle="tooltip" data-placement="top"
                 title="Thêm vào giỏ hàng"><span class="fa fa-shopping-cart fa-3x"></span></a>
         </div>
         <!-- product badge -->
