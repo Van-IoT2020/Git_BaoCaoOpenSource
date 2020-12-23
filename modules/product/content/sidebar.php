@@ -21,13 +21,14 @@
         return $data;
     }
 ?>
+
 <aside class="aa-sidebar">
     <!-- single sidebar -->
     <div class="aa-sidebar-widget">
         <h3>Loại sản phẩm</h3>
         <ul class="aa-catg-nav">
             <?php
-            include "admin/model/producttype.php";
+            include "producttype.php";
             $data = getDataProducttypeList($conn);
             foreach ($data as $item) {
             ?>
@@ -83,9 +84,7 @@
                             <a href="index.php?p=detail&id=<?php echo $item['id']; ?>" class="aa-cartbox-img"><img alt="img" src="public/image/product/<?php echo $item['avatar']; ?>"></a>
                             <div class="aa-cartbox-info">
                                 <h4><a href="index.php?p=detail&id=<?php echo $item['id']; ?>"><?php echo $item['name']; ?></a></h4>
-                                <p><?php //echo number_format($item["price"]); ?>VNĐ</p>
-                                <!-- BUG IS HERE -->
-                                <p><?php echo number_format($item["pricew"]); ?>VNĐ</p>
+                                <p><?php echo number_format($item["price"]); ?>VNĐ</p>
                                 <p><del style="font-size:13px;"><?php echo number_format($item["price"]*1.5); ?>VNĐ</del></p>
                             </div>
                         </li>
@@ -108,7 +107,9 @@
                     foreach($dataNew as $item) {
                 ?>
                 <li>
-                <a href="index.php?p=detail&id=<?php echo $item['id']; ?>" class="aa-cartbox-img"><img alt="img" src="public/image/product/<?php echo $item['avatar']; ?>"></a>
+                <!-- <a href="index.php?p=detail&id=<?php //echo $item['id']; ?>" class="aa-cartbox-img"><img alt="img" src="public/image/product/<?php //echo $item['avatar']; ?>"></a> -->
+                <!-- BUG IS HERE -->
+                <a href="index.php?p=detail&id=<?php echo $item['id']; ?>" class="aa-cartbox-img"><img alt="img" src="public/image/product"></a>
                     <div class="aa-cartbox-info">
                         <h4><a href="index.php?p=detail&id=<?php echo $item['id']; ?>"><?php echo $item['name']; ?></a></h4>
                         <p><?php echo number_format($item["price"]); ?>VNĐ</p>
