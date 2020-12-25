@@ -108,8 +108,8 @@
                 ?>
                 <li>
                 <!-- <a href="index.php?p=detail&id=<?php //echo $item['id']; ?>" class="aa-cartbox-img"><img alt="img" src="public/image/product/<?php //echo $item['avatar']; ?>"></a> -->
-                <!-- BUG IS HERE -->
-                <a href="index.php?p=detail&id=<?php echo $item['id']; ?>" class="aa-cartbox-img"><img alt="img" src="public/image/product"></a>
+                <!-- BUG IS HERE - da fix -->
+                <a href="index.php?p=detail&id=<?php echo $item['id']; ?>" class="aa-cartbox-img"><img alt="img" src="public/image/product/<?php echo $item['avatar']; ?>"></a>
                     <div class="aa-cartbox-info">
                         <h4><a href="index.php?p=detail&id=<?php echo $item['id']; ?>"><?php echo $item['name']; ?></a></h4>
                         <p><?php echo number_format($item["price"]); ?>VNĐ</p>
