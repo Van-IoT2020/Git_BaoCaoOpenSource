@@ -12,8 +12,7 @@ if (!empty($_SESSION['loginclient'])) {
                             <label>Address</label>
                             <input required type="text" name="address" class="form-control" placeholder="Please enter your home address">
                         </div>
-                        <button type="submit" name="confirmloo" class="aa-browse-btn">Confirm</button>
-                        <!-- <button type="submit" name="confirm" class="aa-browse-btn">Confirm</button> -->
+                        <button type="submit" name="confirm" class="aa-browse-btn">Confirm</button>
                     </form>
                 </div>
                 <div class="col-md-4"></div>
