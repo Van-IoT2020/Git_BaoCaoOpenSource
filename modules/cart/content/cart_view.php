@@ -53,8 +53,7 @@
                           </td>
                           <td><?php echo number_format($item['quantity']*$item['price']); ?>VNĐ</td>
                           <td>
-                            <!-- <a href="index.php?p=deleteCart&idsp=<//?php echo $item//['id']; ?>">Delete</a> -->
-                            <a href="index.php?p=deleteCart">Delete</a>
+                            <a href="index.php?p=deleteCart&idsp=<?php echo $item['id']; ?>">Delete</a>
                           </td>
                         </tr>
                         <?php 
