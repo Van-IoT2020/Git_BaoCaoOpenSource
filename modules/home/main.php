@@ -1,7 +1,6 @@
 <!-- Start slider -->
 <section id="aa-slider">
-<!-- CREATE BUG IS HERE -->
-    <?php include 'content/sliderBUG.php' ?>
+    <?php include 'content/slider.php' ?>
   </section>
   <!-- / slider -->
 
